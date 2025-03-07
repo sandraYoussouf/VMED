@@ -6,6 +6,7 @@
 
     --font: 'Inter', sans-serif;
     --dark-blue: #00004E;
+    --medium-blue: #0000C9;
     --denim: #4060AF;
     --midnight-green: #00454E;
     --jet: #383838;
@@ -23,6 +24,7 @@
     list-style-type: none;
 
     font-family: var(--font);
+    font-weight: 380;
     font-size: var(--p-size);
     color: var(--jet);
 }
@@ -31,12 +33,74 @@
     background-color: #19c9b437;
 }
 
+section{
+  padding: 0 10rem;
+}
+
+a{
+  text-decoration: none;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 /* HEADER */
 
+/* Disclaimer */
 .header-disclaimer{
-  text-align: center;
-  color: white;
   background-color: var(--dark-blue);
+}
+
+.header-disclaimer>p{
+  color: white;
+  padding: 0.5rem;
+  padding-left: 10rem;
+}
+
+/* Nav 1 */
+.container-fluid{
+  padding: 1.3rem 8rem;
+}
+
+.navbar-brand{
+  padding-right: 0.5rem;
+}
+
+.nav-link{
+  color: var(--medium-blue);
+}
+
+.nav-link:hover{
+  color: var(--medium-blue);
+  opacity: 0.7;
+}
+
+/* Nav 2 */
+.header-nav2 > ul{
+  display: flex;
+  padding: 2rem 10rem;
+  background-color: var(--denim);
+}
+
+.header-nav2 > ul > li{
+  padding: 0rem;
+  padding-right: 1rem;
+}
+
+.header-nav2 > ul > li > a{
+  color: white;
+}
+
+/* Header button */
+.register-button{
+  font-weight: 700;
+  padding: 0.5rem 2rem;
+  border-radius: 2rem;
+  border: 3px solid var(--medium-blue);
+  color: var(--medium-blue);
+  background-color: white;
 }
 
 /* MAIN */
