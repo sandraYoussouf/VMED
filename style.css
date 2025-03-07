@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-/* Colors : Disclaimer & Footer #00004E , Header font #0000C9 , Header & Cards button #4060AF , h1 #00377F , h2 & h3 #00454E, Banner Image #C4C4C4, h3 Background #DAE3E8, Cards Image #19C9B5 , p #383838, Accordion Icon #155891, Accordion Border #FECD00 , Infos Footer Background #C1C7CD  */
+/* Colors : Disclaimer & Footer #00004E , Header font #0000C9 , Header & Cards button #4060AF , h1 #00377F , h2 & p-info #00454E, Banner Image #C4C4C4, p-info Background #DAE3E8, Cards Image #19C9B5 , p #383838, Accordion Icon #155891, Accordion Border #FECD00 , Infos Footer Background #C1C7CD  */
 
 :root{
 
@@ -9,6 +9,9 @@
     --denim: #4060AF;
     --midnight-green: #00454E;
     --jet: #383838;
+    --h1-size: 80px;
+    --h2-size: 78px;
+    --p-size: 16px;
 
 }
 
@@ -18,7 +21,10 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     list-style-type: none;
+    
     font-family: var(--font);
+    font-size: var(--p-size);
+    color: var(--jet);
 }
 
 *::selection {
