@@ -12,6 +12,7 @@
     --jet: #383838;
     --h1-size: 80px;
     --h2-size: 48px;
+    --h3-size: 18px;
     --p-size: 16px;
 
 }
@@ -79,7 +80,7 @@ p {
 
 /* buttons */
 
-.register-button{
+.buttonVMED{
   font-weight: 700;
   padding: 0.5rem 2rem;
   border-radius: 2rem;
@@ -158,14 +159,61 @@ h2{
   box-shadow: 0 6px 9px 2px #18274b34;
 }
 
+/* Cards section */
+
+.section-cards-p{
+  margin: 4% 0;
+  padding: 1rem;
+  color: var(--midnight-green);
+  background-color: #DAE3E8;
+  border-radius: 16px;
+}
+
+.col-sm-6{
+  width: 50%;
+  padding-bottom: 32px;
+}
+
 .card{
-  width: 558px;
+  border: unset; /* Disabled bootstrap border */
+  --bs-card-border-radius: 1rem;
+  --bs-card-inner-border-radius: 1rem;
+  box-shadow: 0 3px 5px 1px #18274b34;
+}
+
+.card-body{
+  padding: 30px;
+}
+
+h3{
+  font-weight: 800;
+  font-size: var(--h3-size);
+  color: var(--jet);
 }
 
 .card-img-top{
   width: 100%;
   height: 230px;
   background-color: #19C9B5;
+}
+
+.card-title {
+  color: var(--jet);
+  margin-bottom: 30px;
+}
+
+.card-button{
+  width: 100%;
+  padding: 0.7rem 2rem;
+  color: white;
+  border-color: var(--denim);
+  background-color: var(--denim);
+}
+
+.card-button:hover{
+  color: var(--denim);
+  background-color: white;
+  border-color: var(--denim);
 }
 
 /* Responsive : 991px */
