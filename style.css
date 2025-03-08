@@ -11,7 +11,7 @@
     --midnight-green: #00454E;
     --jet: #383838;
     --h1-size: 80px;
-    --h2-size: 78px;
+    --h2-size: 48px;
     --p-size: 16px;
 
 }
@@ -34,7 +34,7 @@
 }
 
 section{
-  padding: 0 10rem;
+  padding: 0 10%;
 }
 
 a{
@@ -50,13 +50,12 @@ p {
 
 /* Disclaimer */
 .header-disclaimer{
+  padding: 0.5rem 10%;
   background-color: var(--dark-blue);
 }
 
 .header-disclaimer>p{
   color: white;
-  padding: 0.5rem;
-  padding-left: 10rem;
 }
 
 /* Nav 1 */
@@ -70,30 +69,16 @@ p {
 
 .nav-link{
   color: var(--medium-blue);
+  transition: all 0.5s;
 }
 
 .nav-link:hover{
   color: var(--medium-blue);
-  opacity: 0.7;
+  opacity: 0.5;
 }
 
-/* Nav 2 */
-.header-nav2 > ul{
-  display: flex;
-  padding: 2rem 10rem;
-  background-color: var(--denim);
-}
+/* buttons */
 
-.header-nav2 > ul > li{
-  padding: 0rem;
-  padding-right: 1rem;
-}
-
-.header-nav2 > ul > li > a{
-  color: white;
-}
-
-/* Header button */
 .register-button{
   font-weight: 700;
   padding: 0.5rem 2rem;
@@ -101,9 +86,77 @@ p {
   border: 3px solid var(--medium-blue);
   color: var(--medium-blue);
   background-color: white;
+  transition: all 0.5s;
+}
+
+.register-button:hover{
+  color: white;
+  border: 3px solid var(--medium-blue);
+  background-color: var(--medium-blue);
+}
+
+/* Nav 2 */
+.nav2{
+  padding: 2rem 10%;
+  background-color: var(--denim);
+}
+
+.nav2 > ul{
+  display: flex;
+  padding: 0rem;
+  margin-bottom: 0rem; /* Disable Bootstrap margin-bottom */
+}
+
+.nav2-link{
+  padding: 0rem;
+  padding-right: 1rem;
+}
+
+.nav2-link > a{
+  color: white;
+  transition: all 0.5s;
+}
+
+.nav2-link > a:hover{
+  opacity: 0.5;;
 }
 
 /* MAIN */
+
+/* Banner */
+
+.section-banner{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 7% 10%;
+}
+
+h1{
+  padding-bottom: 7%;
+  font-weight: 300;
+  font-size: var(--h1-size);
+  color: #00377F;
+}
+
+h2{
+  font-weight: 300;
+  font-size: var(--h2-size);
+  color: var(--midnight-green);
+}
+
+.banner-titles{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.banner-image{
+  width: 655px;
+  height: 424px;
+  background-color: #C4C4C4;
+  border-radius: 16px;
+  box-shadow: 0 6px 9px 2px #18274b34;
+}
 
 .card{
   width: 558px;
@@ -114,3 +167,5 @@ p {
   height: 230px;
   background-color: #19C9B5;
 }
+
+/* Responsive : 991px */
