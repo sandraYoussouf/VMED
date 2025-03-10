@@ -91,7 +91,7 @@ p {
   transition: all 0.5s;
 }
 
-.register-button:hover{
+.buttonVMed:hover{
   color: white;
   border: 3px solid var(--medium-blue);
   background-color: var(--medium-blue);
@@ -291,6 +291,14 @@ h4{
 
 .footer-vmed-p{
   padding: 9% 5% 13% 0%;
+}
+
+.footer-button{
+  width: 100%;
+  color: var(--dark-blue);
+  background-color: white;
+  border-color: white;
+  /* padding: 0.5rem 2rem; */
 }
 
 /* Footer links */
