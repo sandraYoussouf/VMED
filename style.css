@@ -132,6 +132,10 @@ p {
   display: flex;
   justify-content: space-between;
   padding: 7% 10%;
+  background-image: url(assets/BG.svg); 
+  background-size: cover;
+  background-position-y: -140px;
+  background-repeat: no-repeat;
 }
 
 h1{
