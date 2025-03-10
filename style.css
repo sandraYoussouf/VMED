@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-/* Colors : Disclaimer & Footer #00004E , Header font #0000C9 , Header & Cards button #4060AF , h1 #00377F , h2 & p-info #00454E, Banner Image #C4C4C4, p-info Background #DAE3E8, Cards Image #19C9B5 , p #383838, Accordion Icon #155891, Accordion Border #FECD00 , Infos Footer Background #C1C7CD  */
+/* Colors : Disclaimer & Footer #00004E , Header font #0000C9 , Header & Cards button #4060AF , h1 #00377F , h2 & p-info #00454E, Banner Image #C4C4C4, p-info Background #DAE3E8, Cards Image #19C9B5 , p #383838, Accordion Icon #155891, Accordion Border #FECD00 , Footer Divider #C1C7CD  */
 
 :root{
 
@@ -13,6 +13,7 @@
     --h1-size: 80px;
     --h2-size: 48px;
     --h3-size: 18px;
+    --h4-size: 32px;
     --p-size: 16px;
 
 }
@@ -80,7 +81,7 @@ p {
 
 /* buttons */
 
-.buttonVMED{
+.buttonVMed{
   font-weight: 700;
   padding: 0.5rem 2rem;
   border-radius: 2rem;
@@ -241,5 +242,82 @@ h3{
 .accordion-body {
   padding: 5px 10px;
 }
+
+/* FOOTER */
+
+/* Footer info */
+.footer-info{
+  padding: 5% 10% 2%;
+  margin-bottom: 3%;
+  border-bottom: 1px solid #C1C7CD;
+}
+
+.footer-info-text{
+  padding: 0 5%;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Footer absolute */
+
+.footer-absolute{
+  display: flex;
+  background-color: var(--dark-blue);
+  padding: 4% 10%;
+}
+
+.footer-absolute-article {
+  width: 50%;
+  padding: 0 2rem;
+  border-right: 1px solid #C1C7CD;
+}
+
+.footer-absolute h4,
+.footer-absolute p{
+  color: white;
+}
+
+/* Footer Compte VMed */
+
+h4{
+  font-size: 32px;
+  font-weight: 300;
+  margin: 0;
+}
+
+.footer-vmed{
+  padding-left: unset;
+}
+
+.footer-vmed-p{
+  padding: 9% 5% 13% 0%;
+}
+
+/* Footer links */
+
+.footer-nav > ul{
+  width: 65%;
+  padding-left: 5%;
+}
+
+.footer-nav > ul > li{
+  padding: 1rem 0;
+  font-weight: 600;
+  color: white;
+  text-decoration: underline;
+}
+
+.footer-nav > ul > li > a{
+  font-weight: 600;
+  color: white;
+  text-decoration: underline;
+}
+
+/* Footer Copyright */
+
+.footer-copyright p{
+  padding-bottom: 7%;
+}
+
 
 /* Responsive : 991px */
