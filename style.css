@@ -103,6 +103,10 @@ p {
 }
 
 /* Nav 2 */
+.nav2-mobile{
+  display: none;
+}
+
 .nav2{
   padding: 2rem 10%;
   background-color: var(--denim);
@@ -143,6 +147,12 @@ p {
   background-repeat: no-repeat;
 }
 
+.banner-titles{
+  width: 40%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 h1{
   padding-bottom: 7%;
   font-weight: 300;
@@ -151,14 +161,10 @@ h1{
 }
 
 h2{
+  width: 98%;
   font-weight: 300;
   font-size: var(--h2-size);
   color: var(--midnight-green);
-}
-
-.banner-titles{
-  margin-top: auto;
-  margin-bottom: auto;
 }
 
 .banner-image{
@@ -342,13 +348,6 @@ h4{
 @media ( width <= 751px ) {
   :root{
 
-    /* --h1-size: 80px;
-    --h2-size: 48px;
-    --h3-size: 18px;
-    --h4-size: 32px;
-    --p-size: 16px;
-    --p-info-size: 14px; */
-
     --h1-size: 70px;
     --h2-size: 38px;
     --h3-size: 16px;
@@ -358,10 +357,61 @@ h4{
 
   }
 
+  .container-fluid {
+    padding: 3% 10%;
+  }
+
+  .navbar-nav {
+    margin: 5% 0;
+    padding: 5% 0;
+    border-top: 1px solid #80808078;
+    border-bottom: 1px solid #80808066;
+  }
+
+  .buttonVMed {
+    width: 100%;
+    margin: 5% 0;
+  }
+
+  .nav2{
+    display: none;
+  }
+
+  .nav2-mobile{
+    display: block;
+  }
+
+  .nav2-list-mobile{
+    flex-direction: column;
+    margin: 5% 0 0;
+    padding: 5% 0;
+    border-top: 1px solid #80808078;
+  }
+
+  .nav2-link-mobile{
+    padding: 2% 0;
+  }
+
+  .nav2-link-mobile>a{
+    color: var(--medium-blue);
+  }
+
   /* Banner */
 
   .section-banner {
+    padding: 7% 10% 17%;
     flex-direction: column;
+  }
+
+  .banner-titles {
+    width: 100%;
+    margin-top: 15%;
+    margin-bottom: 20%;
+    text-align: center;
+  }
+
+  h2 {
+    width: 98%;
   }
 
   .banner-image {
@@ -370,6 +420,10 @@ h4{
   }
 
   /* Card */
+
+  .section-cards{
+    padding: 0 10% 10%;
+  }
 
   .row {
     flex-direction: column;
@@ -386,6 +440,11 @@ h4{
 
   /* Footer */
 
+  .footer-info {
+    padding: 5% 10% 10%;
+    margin-bottom: 10%;
+  }
+
   .footer-absolute {
     text-align: center;
     flex-direction: column;
@@ -398,8 +457,13 @@ h4{
     border-bottom: 1px solid #C1C7CD;
   }
 
+  .footer-vmed-p {
+    padding: 9% 0% 13%;
+  }
+
   .footer-nav > ul {
     width: 100%;
+    padding-left: 0;
   }
 
   .footer-copyright{
