@@ -175,7 +175,41 @@ h2{
   box-shadow: 0 6px 9px 2px #18274b34;
 }
 
+@keyframes appear{
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.banner-titles, .banner-image{
+  animation: appear 1.5s ease;
+}
+
 /* Cards section */
+
+.section-cards{
+  opacity: 0;
+  animation: appear 1.5s ease 1s forwards;
+
+  /* 
+  animation-name: appear;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+
+  Ideas :
+  animation-play-state: running;
+  animation-timeline: view(); 
+  */
+  
+}
 
 .section-cards-p{
   margin: 4% 0;
@@ -334,7 +368,13 @@ h4{
   font-weight: 600;
   color: white;
   text-decoration: underline;
+  transition: all 0.5s;
 }
+
+.footer-nav > ul > li > a:hover{
+  opacity: 0.5;
+}
+
 
 /* Footer Copyright */
 
