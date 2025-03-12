@@ -338,6 +338,11 @@ h4{
 
 /* Footer Copyright */
 
+.footer-copyright{
+  padding-right: 0;
+  border-right: none;
+}
+
 .footer-copyright p{
   padding-bottom: 7%;
 }
@@ -472,6 +477,7 @@ h4{
   }
 
   .footer-copyright{
+    padding-bottom: 2rem;
     border-bottom: none;
   }
 }
