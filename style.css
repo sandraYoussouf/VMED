@@ -411,7 +411,8 @@ h4{
   }
 
   h2 {
-    width: 98%;
+    padding: 0 1rem;
+    width: 100%;
   }
 
   .banner-image {
@@ -423,6 +424,10 @@ h4{
 
   .section-cards{
     padding: 0 10% 10%;
+  }
+
+  .section-cards-p {
+    margin: 4% 0 10%;
   }
 
   .row {
