@@ -103,6 +103,10 @@ p {
 }
 
 /* Nav 2 */
+.nav2-mobile{
+  display: none;
+}
+
 .nav2{
   padding: 2rem 10%;
   background-color: var(--denim);
@@ -344,13 +348,6 @@ h4{
 @media ( width <= 751px ) {
   :root{
 
-    /* --h1-size: 80px;
-    --h2-size: 48px;
-    --h3-size: 18px;
-    --h4-size: 32px;
-    --p-size: 16px;
-    --p-info-size: 14px; */
-
     --h1-size: 70px;
     --h2-size: 38px;
     --h3-size: 16px;
@@ -358,6 +355,45 @@ h4{
     --p-size: 14px;
     --p-info-size: 14px;
 
+  }
+
+  .container-fluid {
+    padding: 3% 10%;
+  }
+
+  .navbar-nav {
+    margin: 5% 0;
+    padding: 5% 0;
+    border-top: 1px solid #80808078;
+    border-bottom: 1px solid #80808066;
+  }
+
+  .buttonVMed {
+    width: 100%;
+    margin: 5% 0;
+  }
+
+  .nav2{
+    display: none;
+  }
+
+  .nav2-mobile{
+    display: block;
+  }
+
+  .nav2-list-mobile{
+    flex-direction: column;
+    margin: 5% 0 0;
+    padding: 5% 0;
+    border-top: 1px solid #80808078;
+  }
+
+  .nav2-link-mobile{
+    padding: 2% 0;
+  }
+
+  .nav2-link-mobile>a{
+    color: var(--medium-blue);
   }
 
   /* Banner */
