@@ -394,9 +394,7 @@ h4{
 
   .nav2-list-mobile{
     flex-direction: column;
-    margin: 5% 0 0;
-    padding: 5% 0;
-    border-top: 1px solid #80808078;
+    padding: 0;
   }
 
   .nav2-link-mobile{
