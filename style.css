@@ -353,8 +353,9 @@ h4{
 
 
 /* RESPONSIVE */
+/* @media ( width <= 751px ) */
 
-@media ( width <= 751px ) {
+@media ( width <= 992px ) {
   :root{
 
     --h1-size: 70px;
@@ -426,7 +427,12 @@ h4{
 
   .banner-image {
     width: 100%;
-    height: 200px;
+  }
+
+  @media ( width <= 600px ) { 
+    .banner-image {
+      height: 250px;
+    }
   }
 
   /* Cards Section */
