@@ -379,7 +379,7 @@ h4{
   }
 }
 
-@media ( width <= 991px ) {
+@media ( width <= 991.98px ) {
   :root{
 
     --h1-size: 70px;
