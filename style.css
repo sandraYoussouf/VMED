@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-/* Colors : Disclaimer & Footer #00004E , Header font #0000C9 , Header & Cards button #4060AF , h1 #00377F , h2 & p-info #00454E, Banner Image #C4C4C4, p-info Background #DAE3E8, Cards Image #19C9B5 , p #383838, Accordion Icon #155891, Accordion Border #FECD00 , Footer Divider #C1C7CD  */
+/* Colors : Disclaimer & Footer #00004E , Header font #0000C9 , Header & Cards buttons #4060AF , h1 #00377F , h2 & p-legal #00454E, Banner Image #C4C4C4, p-legal Background #DAE3E8, Cards Image #19C9B5 , p #383838, Accordion Icon #155891, Accordion Border #FECD00 , Footer Divider #C1C7CD  */
 
 :root{
 
@@ -84,9 +84,7 @@ p {
   opacity: 0.5;
 }
 
-/* buttons */
-
-.buttonVMed{
+.buttonVMed{ /* buttons */
   font-weight: 700;
   padding: 0.5rem 2rem;
   border-radius: 2rem;
@@ -260,20 +258,20 @@ h3{
 
 /* FOOTER */
 
-/* Footer info */
-.footer-info{
+/* Footer : legal */
+.footer-legal{
   padding: 5% 10% 2%;
   margin-bottom: 3%;
   border-bottom: 1px solid #C1C7CD;
 }
 
-.footer-info-text{
+.footer-legal-text{
   padding: 0 5%;
   font-size: var(--p-info-size);
   text-align: center;
 }
 
-/* Footer absolute */
+/* Footer */
 
 .footer-absolute{
   display: flex;
@@ -281,7 +279,7 @@ h3{
   padding: 4% 10%;
 }
 
-.footer-absolute-article {
+.footer-absolute-section {
   width: 50%;
   padding: 0 2rem;
   border-right: 1px solid #C1C7CD;
@@ -292,7 +290,7 @@ h3{
   color: white;
 }
 
-/* Footer Compte VMed */
+/* Footer VMed Account */
 
 h4{
   font-size: 32px;
@@ -354,7 +352,7 @@ h4{
 }
 
 
-/* Responsive : 991px */
+/* RESPONSIVE */
 
 @media ( width <= 751px ) {
   :root{
@@ -367,6 +365,8 @@ h4{
     --p-info-size: 14px;
 
   }
+
+  /* Header */
 
   .container-fluid {
     padding: 3% 10%;
@@ -405,7 +405,7 @@ h4{
     color: var(--medium-blue);
   }
 
-  /* Banner */
+  /* Banner Section */
 
   .section-banner {
     padding: 7% 10% 17%;
@@ -429,7 +429,7 @@ h4{
     height: 200px;
   }
 
-  /* Card */
+  /* Cards Section */
 
   .section-cards{
     padding: 0 10% 10%;
@@ -454,7 +454,7 @@ h4{
 
   /* Footer */
 
-  .footer-info {
+  .footer-legal {
     padding: 5% 10% 10%;
     margin-bottom: 10%;
   }
@@ -464,7 +464,7 @@ h4{
     flex-direction: column;
   }
 
-  .footer-absolute-article {
+  .footer-absolute-section {
     width: 100%;
     padding: 4rem 0;
     border-right: none;
